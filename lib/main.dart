@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('Сыщиков Макар Максимович ИКБО-06-22 22И1809' ),
+            const Text('Сыщиков Макар Максимович ИКБО-06-22 22И1809 ' ),
           ],
         ),
       ),
