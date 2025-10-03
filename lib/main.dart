@@ -35,14 +35,19 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Сыщиков Макар Максимович ИКБО-06-22 22И1809' ,
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.green,
-                fontStyle: FontStyle.italic
-              ))
+            Container(decoration: BoxDecoration(
+              color: Colors.amber,
+              borderRadius: BorderRadius.circular(50)
+            ),
+                padding: EdgeInsets.all(30),
+                child: const Text('Сыщиков Макар Максимович ИКБО-06-22 22И1809' ,
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.green,
+                        fontStyle: FontStyle.italic
+                    ))
+            )
           ,
-            const Padding(padding: EdgeInsets.all(30),child: const Text('and')),
             ElevatedButton(
               onPressed: null,
               child: const Text(
