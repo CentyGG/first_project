@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Сыщиков Макар Максимович ИКБО-06-22 22И1809' ,
