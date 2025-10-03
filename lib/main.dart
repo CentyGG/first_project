@@ -42,6 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontStyle: FontStyle.italic
               ))
           ,
+            const SizedBox(width: 50,height: 20,),
             ElevatedButton(
               onPressed: null,
               child: const Text(
