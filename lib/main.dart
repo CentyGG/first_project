@@ -17,14 +17,12 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
-
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
@@ -37,7 +35,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('Сыщиков Макар Максимович ИКБО-06-22 22И1809 ' ),
+            const Text('Сыщиков Макар Максимович ИКБО-06-22 22И1809' ,
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.green,
+                fontStyle: FontStyle.italic
+              ))
           ],
         ),
       ),
