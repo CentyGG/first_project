@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontSize: 20,
                 color: Colors.green,
                 fontStyle: FontStyle.italic
-              ))
+              ),)
           ],
         ),
       ),
