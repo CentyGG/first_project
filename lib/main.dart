@@ -32,18 +32,28 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text('Сыщиков Макар Максимович ИКБО-06-22 22И1809' ,
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.green,
-                fontStyle: FontStyle.italic
-              ),)
-          ],
+        // child:
+        //     const Text('Сыщиков Макар Максимович ИКБО-06-22 22И1809' ,
+        //       style: TextStyle(
+        //         fontSize: 20,
+        //         color: Colors.green,
+        //         fontStyle: FontStyle.italic
+        //       ))
+        child:ElevatedButton(
+            onPressed: null,
+            child: const Text(
+              'Пример',
+              style: TextStyle(color: Colors.black),
+            ),
+            style: ElevatedButton.styleFrom(
+
+                disabledBackgroundColor: Colors.deepOrange,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50)
+                )
+            )
+        )
         ),
-      ),
       );
   }
 }
