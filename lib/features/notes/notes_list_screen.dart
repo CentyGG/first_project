@@ -22,7 +22,6 @@ class NotesListScreen extends StatelessWidget {
           return Card(
             margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             child: ListTile(
-              leading: const Icon(Icons.note),
               title: Text(notes[index]),
               subtitle: Text('Заметка ${index + 1}'),
             ),

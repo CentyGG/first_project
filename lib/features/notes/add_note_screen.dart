@@ -33,7 +33,6 @@ class AddNoteScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // В реальном приложении здесь была бы логика сохранения
           Navigator.pop(context);
         },
         child: const Icon(Icons.save),

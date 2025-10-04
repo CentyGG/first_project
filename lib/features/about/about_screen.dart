@@ -25,7 +25,7 @@ class AboutScreen extends StatelessWidget {
             ),
             SizedBox(height: 30),
             Text(
-              'Разработано сыщиковым макарос',
+              'Разработано сыщиковым макаром',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16),
             ),

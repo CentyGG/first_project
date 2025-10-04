@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'notes_list_screen.dart';
-import 'add_note_screen.dart';
-import 'settings_screen.dart';
-import 'about_screen.dart';
-
+import '../notes/notes_list_screen.dart';
+import '../notes/add_note_screen.dart';
+import '../settings/settings_screen.dart';
+import '../about/about_screen.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,28 +20,23 @@ class HomeScreen extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 50),
-            _buildMenuButton(context, 'Мои заметки', Icons.list, () {
+            _buildMenuButton(context, 'Мои заметки', () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const NotesListScreen()));
             }),
-            _buildMenuButton(context, 'Добавить заметку', Icons.add, () {
+            _buildMenuButton(context, 'Добавить заметку', () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const AddNoteScreen()));
             }),
-            _buildMenuButton(context, 'Настройки', Icons.settings, () {
+            _buildMenuButton(context, 'Настройки', () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const SettingsScreen()));
             }),
-            _buildMenuButton(context, 'О приложении', Icons.info, () {
+            _buildMenuButton(context, 'О приложении', () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const AboutScreen()));
-            }),],),),);
-  }
-  Widget _buildMenuButton(BuildContext context, String text, IconData icon, VoidCallback onPressed) {
+            }),],),),);}
+  Widget _buildMenuButton(BuildContext context, String text, VoidCallback onPressed) {
     return Container(
       width: 200,
       margin: const EdgeInsets.symmetric(vertical: 10),
-      child: ElevatedButton.icon(
+      child: ElevatedButton(
         onPressed: onPressed,
-        icon: Icon(icon),
-        label: Text(text),
-      ),
-    );
-  }
-}
+        child: Text(text),
+      ),);}}
